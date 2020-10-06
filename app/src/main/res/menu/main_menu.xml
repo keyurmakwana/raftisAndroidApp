@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_men"
+            android:icon="@drawable/men"
+            android:title="Men" />
+        <item
+            android:id="@+id/nav_women"
+            android:icon="@drawable/women"
+            android:title="Woman" />
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Collection">
+            <menu>
+                <item
+                    android:id="@+id/nav_wedding"
+                    android:icon="@drawable/wedding"
+                    android:title="Wedding Special" />
+                <item
+                    android:id="@+id/nav_proffessional"
+                    android:icon="@drawable/tie"
+                    android:title="Professional Wear" />
+
+                <item
+                    android:id="@+id/nav_elderly"
+                    android:icon="@drawable/old_man"
+                    android:title="Elderly person" />
+                <item
+                    android:id="@+id/nav_school_wear"
+                    android:icon="@drawable/school_wear"
+                    android:title="School Wear" />
+                <item
+                    android:id="@+id/nav_occasion"
+                    android:icon="@drawable/occassional"
+                    android:title="Occasion Wear" />
+            </menu>
+
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_your_order"
+            android:icon="@drawable/order"
+            android:title="Your orders" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/account"
+            android:title="Your Account" />
+        <item
+            android:id="@+id/nav_whishlist"
+            android:icon="@drawable/wishlist"
+            android:title="Wishlist" />
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Coomunicate">
+            <menu>
+                <item
+                    android:id="@+id/nav_contact_us"
+                    android:icon="@drawable/contact_us"
+                    android:title="Reach to us" />
+                <item
+                    android:id="@+id/nav_thank_you"
+                    android:icon="@drawable/thank_you"
+                    android:title="Thank You" />
+                
+            </menu>
+
+        </item>
+    </group>
+
+    <group android:checkableBehavior="none">
+
+        <item android:title="Share">
+            <menu> <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:title="Share Me"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>

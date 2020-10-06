@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "970895537225",
+    "firebase_url": "https://raftis-386c1.firebaseio.com",
+    "project_id": "raftis-386c1",
+    "storage_bucket": "raftis-386c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970895537225:android:27ccd4c44c8f237c567b98",
+        "android_client_info": {
+          "package_name": "com.keyur.raftis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970895537225-0o5hrrjsbpaf2189sb64vccrnj5ipu1g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.keyur.raftis",
+            "certificate_hash": "67c66a5bf4cd51d4fa9024e2e4264fb26336e647"
+          }
+        },
+        {
+          "client_id": "970895537225-m952lh85ru7mfdl8jojd9hd3f8hh2s5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4wH1kithHJZ3yrg44hpQEjNK4ifocKdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970895537225-38jiossfc3fvvk2j140vv230kt6hvsf1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

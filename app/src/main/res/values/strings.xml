@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Raftis</string>
+    <string name="raftisUrl">https://keyurmakwana.github.io/raftis/</string>
+    <string name="raftisEmail">project.keyur@gmail.com</string>
+</resources>

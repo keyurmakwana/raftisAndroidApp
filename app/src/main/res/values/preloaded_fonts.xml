@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/asul</item>
+        <item>@font/biorhyme</item>
+        <item>@font/cedarville_cursive</item>
+        <item>@font/pacifico</item>
+        <item>@font/tillana_medium</item>
+        <item>@font/trade_winds</item>
+        <item>@font/vibur</item>
+    </array>
+</resources>
