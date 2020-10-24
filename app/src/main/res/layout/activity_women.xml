@@ -49,14 +49,14 @@
             android:layout_width="match_parent"
             android:layout_height="450dp"
             android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title">
+            app:layout_constraintTop_toBottomOf="@+id/women_recyceler">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="180dp">
+                android:layout_height="150dp">
 
                 <ImageView
                     android:id="@+id/womenp1"
@@ -97,32 +97,21 @@
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/textmen1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="22sp"
-            android:fontFamily="@font/asul"
-            android:text="Featured brand" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/women_recyceler"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="200dp"
             android:layout_margin="2dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textmen1" />
+            app:layout_constraintTop_toBottomOf="@+id/title" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/women_recyceler"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
             android:layout_margin="10dp"
             app:layout_constraintVertical_weight="2"
             android:orientation="vertical">
@@ -209,7 +198,7 @@
 
         </LinearLayout>
 
-       
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

@@ -29,6 +29,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.keyur.raftis.NavigationActivities.ContactUs;
 import com.keyur.raftis.NavigationActivities.ThankYou;
+import com.keyur.raftis.gender.Men;
+import com.keyur.raftis.gender.Women;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
@@ -48,6 +50,10 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
     String url4="https://firebasestorage.googleapis.com/v0/b/raftis-386c1.appspot.com/o/homepage%2Fhome_scroll_girl.jpg?alt=media&token=3df98c99-9133-4a5b-9b7d-ab591f83cd9f";
     String url5="https://firebasestorage.googleapis.com/v0/b/raftis-386c1.appspot.com/o/homepage%2Fhome_scroll_wedding.jpg?alt=media&token=c6a59cf9-bb39-4d77-aac8-7573bd8fd9f8";
 
+    String url11="https://firebasestorage.googleapis.com/v0/b/raftis-386c1.appspot.com/o/homepage%2Fhomedeal1.JPG?alt=media&token=1cc3754a-b44d-4944-9ac9-5ac3c7dcfb27";
+    String url12="https://firebasestorage.googleapis.com/v0/b/raftis-386c1.appspot.com/o/homepage%2Fhomedeal2.PNG?alt=media&token=4d5cee8a-f7e2-4286-b947-903fb199be8f";
+    String url13="https://firebasestorage.googleapis.com/v0/b/raftis-386c1.appspot.com/o/homepage%2Fhomedeal3.PNG?alt=media&token=d9993c6f-a78c-4058-95f8-1eb3fb7f9f2c";
+
     RecyclerView featuredRecycler;
 
     SliderView sliderView;
@@ -62,7 +68,7 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
     DatabaseReference c5=databaseReference.child("cardImages/card5");
     DatabaseReference c6=databaseReference.child("cardImages/card6");
 
-    ImageView cv1,cv2,cv3,cv4,cv5,cv6;
+    ImageView cv1,cv2,cv3,cv4,cv5,cv6,deal1,deal2,deal3;
 
     DrawerLayout drawerLayout;
     NavigationView navigationView;
@@ -110,6 +116,10 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
         cv4=findViewById(R.id.card4);
         cv5=findViewById(R.id.card5);
         cv6=findViewById(R.id.card6);
+
+        deal1=findViewById(R.id.speical_discount_image);
+        deal2=findViewById(R.id.price_under1);
+        deal3=findViewById(R.id.price_under2);
 
         featuredRecycler=findViewById(R.id.home_featured_brand);
 
@@ -208,6 +218,13 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
                 intent.putExtra(Intent.EXTRA_TEXT,shareBody);
                 startActivity(Intent.createChooser(intent,"Share Using"));
                 break;
+            case R.id.nav_men:
+                startActivity(new Intent(getApplicationContext(), Men.class));
+                break;
+
+            case R.id.nav_women:
+                startActivity(new Intent(getApplicationContext(), Women.class));
+                break;
         }
         return true;
     }
@@ -235,6 +252,23 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
         card(c4,cv4);
         card(c5,cv5);
         card(c6,cv6);
+
+
+        Glide.with(HomePage.this)
+                .load(url11)
+                .centerCrop()
+                .placeholder(R.drawable.loading)
+                .into(deal1);
+        Glide.with(HomePage.this)
+                .load(url12)
+                .centerCrop()
+                .placeholder(R.drawable.loading)
+                .into(deal2);
+        Glide.with(HomePage.this)
+                .load(url13)
+                .centerCrop()
+                .placeholder(R.drawable.loading)
+                .into(deal3);
 
 
     }

@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".gender.Men"></activity>
+        <activity android:name=".gender.Women"></activity>
+        <activity android:name=".Product" />
+        <activity android:name=".gender.Men" />
         <activity android:name=".NavigationActivities.ContactUs" />
         <activity android:name=".NavigationActivities.ThankYou" />
         <activity android:name=".GetNumber" />
